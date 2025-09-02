@@ -1,9 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar.js';
 
-function App() {
+const App = () => {
+  const title = 'My react app';
+
   return (
     <div className="App">
+      <Navbar title={title} />
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
